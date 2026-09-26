@@ -1,0 +1,5 @@
+Experiment,Change,Reason,Validation,Result,Decision
+E00,Mean prediction baseline,Establish a simple reference point,5-fold KFold RMSE,1697.7240714332984,Reference only
+E01,Ridge regression with one-hot categorical variables,Conventional linear benchmark,5-fold KFold RMSE,1137.6722999881083,Compare with nonlinear model
+E02,CatBoost base configuration,Handle categorical variables and nonlinear effects,5-fold KFold RMSE,1084.978093704641,Retain as candidate
+E03,CatBoost modest tuning,Test a deeper/shallower and learning-rate trade-off without broad search,5-fold KFold RMSE,1078.3807044090142,Select if lowest CV RMSE
